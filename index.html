@@ -11,6 +11,18 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
 
+<div class="modal" role="dialog" id="my_modal_8">
+    <div class="modal-box flex flex-col justify-center items-center">
+      <img src="./images/success.png">
+      <h3 class="font-bold text-xl text-green-700">Success</h3>
+      <p class="py-4 font-bold raleway-semibold">Thank you for booking our bus Seats.</p>
+      <p class="font-bold raleway-semibold">We are working very hard to find the best service for you.</p>
+      <div class="modal-action">
+       <a href="#" class="btn btn-accent bg-green-700 w-full px-8 rounded-2xl text-white">Continue</a>
+      </div>
+    </div>
+  </div>
+
 <body>
     <div class="lg:mx-[100px] lg:my-4 mx-5 my-2">
         <div class="navbar bg-base-100">
@@ -363,7 +375,7 @@
                         <h1 class="text-sm font-bold raleway-regular">Seat</h1>
                         <span id="seat-count" class="bg-green-500 text-white px-4">0</span>
                     </div>
-                    <h1 class="text-sm font-bold raleway-regular">Class</h1>
+                    <h1 class="text-sm font-bold raleway-regular mr-10">Class</h1>
                     <h1 class="text-sm font-bold raleway-regular">Price</h1>
                 </div>
 
@@ -381,16 +393,21 @@
                     <h1 class="text-sm font-bold raleway-regular">Total Price</h1>
                     <h1 class="text-sm font-bold raleway-regular">BDT <span id="total-price">0</span></h1>
                 </div>
+                <div class="flex justify-between">
+                    <p id="discount-container" class = 'text-sm font-bold raleway-regular'></p>
+                    <p id="discount-price-container" class = 'text-sm font-bold raleway-regular'></p>
+                    
+            </div>
                 <div class="join flex justify-center">
-                    <input id="input-field" class="input lg:w-1/2" placeholder="Have any coupon?" hidden/>
+                    <input id="input-field" class="input lg:w-1/2" placeholder="Have any coupon?" disabled/>
                     <button onclick="applyCode()" id="apply-btn"
-                        class="btn join-item rounded-md bg-[#1DD100] text-white font-bold" hidden>
+                        class="btn join-item rounded-md bg-[#1DD100] text-white font-bold" disabled>
                         Apply
                     </button>
                 </div>
                 <div class="flex justify-between">
                     <h1 class="text-sm font-bold raleway-regular">Grand Total</h1>
-                    <h1 class="text-sm font-bold raleway-regular">BDT <span>0</span></h1>
+                    <h1 class="text-sm font-bold raleway-regular">BDT <span id="grand-total">0</span></h1>
                 </div>
 
             </div>
@@ -399,7 +416,7 @@
                 <input type="text" placeholder="Enter your name"
                     class="border-2 border-slate-400 p-2 rounded-xl w-full">
 
-                <h1 class="text-sm raleway-medium mt-8">Phone Number*</h1>
+                <h1 id="phone-number" class="text-sm raleway-medium mt-8">Phone Number*</h1>
                 <input type="number" placeholder="Phone number"
                     class="border-2 border-slate-400 p-2 px-2 rounded-xl w-full">
 
@@ -407,8 +424,8 @@
                 <input type="email" placeholder="Enter your email Id"
                     class="border-2 border-slate-400 p-2 rounded-xl w-full">
                 <br>
-
-                <button class="btn btn-accent text-white bg-[#1DD100] mt-4 w-full">Next</button>
+                 
+                 <a href="#my_modal_8"><button id="purchase-button" class="btn btn-accent text-white bg-[#1DD100] mt-4 w-full">Next</button></a>
                 <div class="flex justify-around mt-4">
                     <h3 class="text-sm text-gray-500 underline">Terms and Conditions</h3>
                     <h3 class="text-sm text-gray-500 underline">Cancellation Policy</h3>
