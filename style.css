@@ -31,5 +31,8 @@
     font-style: normal;
   }
   
+  html{
+    scroll-behavior: smooth;
+  }
   
   
