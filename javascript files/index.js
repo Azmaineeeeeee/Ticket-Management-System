@@ -11,8 +11,6 @@ for (let seatButton of seatButtons) {
   seatButton.addEventListener("click", seatButtonClickHandler);
 }
 
-
-
 function seatButtonClickHandler() {
   if (seatCount >= 4) {
     for (let button of seatButtons) {
@@ -101,3 +99,4 @@ function applyCode(){
         alert('Please provide a valid Coupon Code. Coupon Codes are NEW15 and Couple 20')
     }
 }
+
