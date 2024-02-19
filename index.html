@@ -13,15 +13,16 @@
 
 <div class="modal" role="dialog" id="my_modal_8">
     <div class="modal-box flex flex-col justify-center items-center">
-      <img src="./images/success.png">
-      <h3 class="font-bold text-xl text-green-700">Success</h3>
-      <p class="py-4 font-bold raleway-semibold">Thank you for booking our bus Seats.</p>
-      <p class="font-bold raleway-semibold">We are working very hard to find the best service for you.</p>
-      <div class="modal-action">
-       <a href="#" onclick="refresh()" id="refresh-button" class="btn btn-accent bg-green-700 w-full px-8 rounded-2xl text-white">Continue</a>
-      </div>
+        <img src="./images/success.png">
+        <h3 class="font-bold text-xl text-green-700">Success</h3>
+        <p class="py-4 font-bold raleway-semibold">Thank you for booking our bus Seats.</p>
+        <p class="font-bold raleway-semibold">We are working very hard to find the best service for you.</p>
+        <div class="modal-action">
+            <a href="#" onclick="refresh()" id="refresh-button"
+                class="btn btn-accent bg-green-700 w-full px-8 rounded-2xl text-white">Continue</a>
+        </div>
     </div>
-  </div>
+</div>
 
 <body>
     <div class="lg:mx-[100px] lg:my-4 mx-5 my-2">
@@ -156,15 +157,15 @@
             </div>
     </div>
 
-    <div class="mt-10 border-t-2 border-green-400 w-full mx-0">
+    <div class="mt-10 border-t-2 border-green-400 w-full rounded-2xl mx-0">
         <div class="mt-8">
             <h1 class="text-center text-2xl font-bold">A.M Paribahan</h1>
             <p class="mt-3 text-center text-gray-400 text-sm">Yes, you can get great deal on purchasing products from
                 us. <br> <span class="ml-14">keep an eye on our website.</span></p>
         </div>
 
-        <div class="flex lg:flex-row flex-col justify-between border-1 bg-white rounded-2xl p-4 lg:mx-20 mt-6">
-            <div class="lg:w-3/4">
+        <div class="flex lg:flex-row flex-col justify-between border-1 bg-gray-100 rounded-2xl p-4 lg:mx-20 mt-6">
+            <div class="lg:w-3/5">
                 <div class="flex lg:justify-between lg:gap-4 gap-2.5 items-center">
                     <div class="flex gap-3">
                         <img src="./images/bus-logo.png">
@@ -178,17 +179,19 @@
                     <div class="flex rounded-md bg-slate-200 p-2 justify-between w-[150px] h-[40px] border">
                         <img src="./images/seat-green.png" />
 
-                        <button class="text-[#1DD100] font-medium"><span id="available-seats">40</span> Seats Left </button>
+                        <button class="text-[#1DD100] font-medium"><span id="available-seats">40</span> Seats Left
+                        </button>
 
                     </div>
 
                 </div>
 
-                <div class="border-none p-4 rounded-xl bg-gray-100 mt-4">
+                <div class="border-none p-4 rounded-xl bg-white mt-4">
                     <div class="flex justify-between">
                         <h1 class="text-base raleway-medium">Route</h1>
                         <h3 class="text-sm raleway-bold"> Dhaka-Sylhet</h3>
                     </div>
+
 
                     <h3 class="border-b-2 border-gray-300 border-dotted p-2"></h3>
 
@@ -224,7 +227,7 @@
             <h3 class="border-r-2  border-green-400 border-dotted p-2"></h3>
 
 
-            <div class="space-y-2 flex flex-col justify-center items-center">
+            <div class="space-y-2 flex flex-col justify-center items-center lg:w-1/4">
                 <img src="./images/fare.png">
                 <h1 class="text-3xl raleway-medium">550 Taka</h1>
                 <span class="text-lg raleway-normal text-center">Per Seat</span>
@@ -236,7 +239,7 @@
 
     <!-- main functional part flex -->
     <div id="ticket-section"
-        class="lg:mx-[100px] lg:my-4 mx-5 my-2 bg-white p-4 rounded-xl flex flex-col lg:flex-row gap-6">
+        class="lg:mx-[90px] lg:my-4 mx-5 my-2 bg-gray-100 p-10 rounded-xl flex flex-col lg:flex-row gap-6">
 
         <!-- seat section -->
         <div class="lg:w-3/4 w-full">
@@ -255,8 +258,8 @@
             </div>
             <h3 class="border-b-2 border-gray-300 border-dotted p-2"></h3>
             <div class="flex justify-end">
-                <div class="border-4 rounded-lg bg-slate-300 w-20 p-1 flex justify-center border-none mt-4">
-                    <img src="./images/seat-gray.png">
+                <div class="mt-4">
+                    <img src="./images/Group 56.png">
                 </div>
             </div>
 
@@ -383,8 +386,8 @@
                     <p id="ticket-container"></p>
                     <p id="class-container"></p>
                     <p id="price-container"></p>
-            
-            </div>
+
+                </div>
 
 
 
@@ -394,12 +397,12 @@
                     <h1 class="text-sm font-bold raleway-regular">BDT <span id="total-price">0</span></h1>
                 </div>
                 <div class="flex justify-between">
-                    <p id="discount-container" class = 'text-sm font-bold raleway-regular'></p>
-                    <p id="discount-price-container" class = 'text-sm font-bold raleway-regular'></p>
-                    
-            </div>
+                    <p id="discount-container" class='text-sm font-bold raleway-regular'></p>
+                    <p id="discount-price-container" class='text-sm font-bold raleway-regular'></p>
+
+                </div>
                 <div class="join flex justify-center">
-                    <input id="input-field" class="input lg:w-1/2" placeholder="Have any coupon?" disabled/>
+                    <input id="input-field" class="input lg:w-1/2 w-3/4" placeholder="Have any coupon?" disabled />
                     <button onclick="applyCode()" id="apply-btn"
                         class="btn join-item rounded-md bg-[#1DD100] text-white font-bold" disabled>
                         Apply
@@ -424,8 +427,9 @@
                 <input type="email" placeholder="Enter your email Id"
                     class="border-2 border-slate-400 p-2 rounded-xl w-full">
                 <br>
-                 
-                 <a href="#my_modal_8"><button id="purchase-button" class="btn btn-accent text-white bg-[#1DD100] mt-4 w-full">Next</button></a>
+
+                <a href="#my_modal_8"><button id="purchase-button"
+                        class="btn btn-accent text-white bg-[#1DD100] mt-4 w-full">Next</button></a>
                 <div class="flex justify-around mt-4">
                     <h3 class="text-sm text-gray-500 underline">Terms and Conditions</h3>
                     <h3 class="text-sm text-gray-500 underline">Cancellation Policy</h3>
@@ -440,18 +444,19 @@
     <footer class="bg-[#030712] lg:p-16 p-4 space-y-6">
         <div class="flex justify-between">
             <h1 class="text-xl text-white font-bold">Fast Tickets</h1>
-            <p  class="text-sm text-white font-normal">Download our app</p>
+            <p class="text-sm text-white font-normal">Download our app</p>
         </div>
 
         <div class="flex lg:flex-row flex-col gap-4 justify-between">
-            <p class="text-sm text-white font-normal">Fast Tickets is a digital platform to make your ticket booking system easier.</p>
-        <div class="flex gap-3 border-white border-2 p-2 rounded-md">
-            <img src="./images/playstore.png">
-            <div>
-            <h3 class="text-sm text-white font-normal">Get it on</h3>
-            <h1 class="text-xl text-white font-bold">Google Play</h1>
-        </div>
-        </div>
+            <p class="text-sm text-white font-normal">Fast Tickets is a digital platform to make your ticket booking
+                system easier.</p>
+            <div class="flex gap-3 border-white border-2 p-2 rounded-md">
+                <img src="./images/playstore.png">
+                <div>
+                    <h3 class="text-sm text-white font-normal">Get it on</h3>
+                    <h1 class="text-xl text-white font-bold">Google Play</h1>
+                </div>
+            </div>
         </div>
 
         <h3 class="border-b-2 border-gray-100 border-dashed"></h3>
@@ -469,7 +474,9 @@
 
     </footer>
 
+
     <script src="./javascript files/index.js"></script>
+    <script src="./javascript files/button.js"></script>
 </body>
 
 </html>
